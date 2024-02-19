@@ -1,0 +1,3 @@
+<%site.categories.findOne({name: 'experience'}).posts.sort('date', -1).limit(5).each(function(post) {%>   
+    <%- partial('_partial/portfolio-index', {item: post}) %> 
+<% })%>
